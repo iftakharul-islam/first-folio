@@ -1,0 +1,130 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:16px;
+}
+body{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2{
+    margin-bottom: 10px;
+  
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* End Global CSS */
+
+/* Menu CSS */
+
+header{
+    width: 100%;
+    background-color: rgb(7, 94, 65);
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    margin:0  .6rem;
+}
+.main-nav li a{
+    color: white;
+    display: inline-block;
+    /* border: 2px solid red; */
+    padding: .6rem;
+    font-size: 1.3rem;
+    transition: all .8s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.main-nav li a:hover::after{
+    border: 1px solid;
+    content: "";
+    margin: 5px 0;
+    display: block;
+    background: #fff;
+    position: absolute;
+    width: 50px;
+}
+
+/*End Menu CSS */
+
+/* Banner  CSS*/
+#banner{
+    width: 100%;
+    background: url('bg/top-banner.png') ;
+    background-size: cover;
+    background-position:top;
+    height: 86vh;
+    border: 2px solid red;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hero-text,
+.hero-image{
+    min-width: 320px;
+    padding: 1rem 0;
+
+}
+/* End Banner CSS */
+
+
+
+
+.mobile-icon{
+    display: none;
+    width: 50px;
+    padding: .6rem .4rem;
+    cursor: pointer;
+
+}
+.mobile-icon span{
+    margin: 5px 3px;
+    border: 2px solid white;
+    display: block;
+
+}
+
+
+
+/* Media Query */
+@media (max-width:768px){
+    .mobile-icon{
+        display: block;
+        order: 01;
+    }
+    .main-nav{
+
+        align-items: flex-start;
+
+    }
+    .nav-items{
+        flex-direction: column;
+    }
+}
+/*End Media Query */
