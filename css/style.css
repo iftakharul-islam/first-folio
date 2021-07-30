@@ -111,7 +111,6 @@ header{
 }
 
 
-
 /* Media Query */
 @media (max-width:768px){
     .mobile-icon{
@@ -119,12 +118,14 @@ header{
         order: 01;
     }
     .main-nav{
-
         align-items: flex-start;
-
     }
     .nav-items{
         flex-direction: column;
     }
+    #navUl{
+	display:none;
+    }
+
 }
 /*End Media Query */
